@@ -1,4 +1,5 @@
 import React from 'react';
+import Tabs from './Tabs';
 
 const Tab = props => {
   console.log(props);
@@ -19,6 +20,8 @@ const Tab = props => {
     </div>
   );
 };
+
+Tabs.propTypes
 
 // Make sure you include PropTypes on your props.
 
