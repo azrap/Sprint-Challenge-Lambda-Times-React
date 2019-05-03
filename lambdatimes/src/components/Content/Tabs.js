@@ -1,6 +1,7 @@
 import React from 'react';
 import Tab from './Tab';
 const Tabs = props => {
+  console.log(props)
   return (
     <div className="tabs">
       <div className="topics">
@@ -8,13 +9,13 @@ const Tabs = props => {
         {/* map over the tabs provided on your props, create a new Tab component for each one.
             give the tab component a `selectTabHandler`, the `selectedTab`, and the `tab` itself as props*/
             }
-            {
-              console.log(props.tabs)}
+            
+              
 
               {props.tabs.map(eTab => (
                 <Tab tab={eTab} 
                 selectedTab={props.selected}
-                selectTabHandler={props.changeSelected} />
+                selectTabHandler={props.selectTabHandler} />
 
               ))
             }
