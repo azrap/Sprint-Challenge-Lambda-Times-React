@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Card from './Card';
+import PropTypes from 'prop-types'
 
 const Cards = props => {
   
@@ -19,17 +20,10 @@ const Cards = props => {
   )
   }
 
+Cards.propTypes = {
+  cards: PropTypes.array.isRequired
+}
 
 
-
-/* /*
-proptypes:
-Cards:
-- headline
-- tab
--img
--author
-
-*/ 
 
 export default Cards;

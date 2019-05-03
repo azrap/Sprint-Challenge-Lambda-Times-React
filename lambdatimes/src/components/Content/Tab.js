@@ -1,5 +1,6 @@
 import React from 'react';
 import Tabs from './Tabs';
+import PropTypes from 'prop-types'
 
 const Tab = props => {
   console.log(props);
@@ -21,7 +22,14 @@ const Tab = props => {
   );
 };
 
-Tabs.propTypes
+Tab.propTypes = {
+  tab: PropTypes.string.isrequired,
+  selectedTab: PropTypes.string.isrequired,
+  selectHandler: PropTypes.func.isrequired
+
+}
+
+
 
 // Make sure you include PropTypes on your props.
 
